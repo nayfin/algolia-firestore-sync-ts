@@ -1,7 +1,7 @@
 {
-  "name": "algolia-firestore-sync",
-  "version": "1.0.7",
-  "description": "A helper for syncing Algolia indices with Firestore from Firebase",
+  "name": "algolia-firestore-sync-ts",
+  "version": "1.0.0",
+  "description": "A helper for syncing Algolia indices to Firestore using Firebase Functions in Typescript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
   "author": "Nathan Kern",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nayfin/algolia-firestore-sync/issues"
+    "url": "https://github.com/nayfin/algolia-firestore-sync-ts/issues"
   },
-  "homepage": "https://github.com/nayfin/algolia-firestore-sync#readme"
+  "homepage": "https://github.com/nayfin/algolia-firestore-sync-ts#readme"
 }
