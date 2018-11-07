@@ -5,16 +5,21 @@ Simple helper for syncing indices to Firestore on Firebase
 ## Usage
 
 ```
-const functions = require('firebase-functions');
-const algoliasearch = require('algoliasearch');
-const algoliaSync = require('algolia-firestore-sync');
+import * as functions from 'firebase-functions';
+import * as algoliasearch from 'algoliasearch';
+import { syncAlgoliaWithFirestore } from 'algolia-firestore-sync-ts';
 
 const algolia = algoliasearch(functions.config().algolia.appid, functions.config().algolia.adminkey);
 const index = algolia.initIndex('ingredients');
 
-exports.syncIngredients = functions.firestore.document('/<CollectionName>/{id}').onWrite(
+export const syncIngredients = functions.firestore.document('/<CollectionName>/{id}').onWrite(
   (change, context) => {
-    return algoliaSync.syncAlgoliaWithFirestore(index, change, context)
+    return syncAlgoliaWithFirestore(index, change, context)
   }
 );
 ```
+
+## TODOs:
+
+- interfaces and strong typing
+-
