@@ -2,7 +2,7 @@
   "name": "algolia-firestore-sync-ts",
   "version": "1.0.2",
   "description": "A helper for syncing Algolia indices to Firestore using Firebase Functions in Typescript",
-  "main": "index.ts",
+  "main": "dist/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
